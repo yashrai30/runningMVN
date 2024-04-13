@@ -8,6 +8,8 @@ pipeline {
             steps {
                 // Clean and build the Maven project
                 bat 'mvn -f demoProject/pom.xml clean package'
+                
+
             }
         }
         stage('Test') {
